@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html'%}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Index</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% block body_block%}
+        <h1>Welcome to Index</h1>
+        <h1>{{ text | cut:"world"}}</h1>
+        <h1>{{ number | add:"25"}}</h1>
+        {% endblock %}
+        <script src="" async defer></script>
+    </body>
+</html>
